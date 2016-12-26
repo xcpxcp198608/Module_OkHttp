@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="imageInfo" type="com.patrick.module_okhttp.Demo.beans.ImageInfo"/>
+        <variable name="eventListener" type="com.patrick.module_okhttp.Demo.Get.EventListener"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bt_get"
+            android:textAllCaps="false"
+            android:text="Get"
+            android:onClick="@{eventListener.onClick}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_get"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</layout>
+
+
