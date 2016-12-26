@@ -8,14 +8,9 @@ import android.content.Context;
 
 public class DownloadMaster {
 
-
-
     public static DownloadRequest with (Context context){
         return new DownloadRequest(context);
     }
 
-    public static void cancel (Object tag){
-
-    }
 
 }

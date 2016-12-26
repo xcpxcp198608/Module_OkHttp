@@ -3,8 +3,8 @@ package com.patrick.module_okhttp.OkHttp.Download;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.util.Log;
 
-import com.patrick.module_okhttp.Demo.utils.Logger;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -132,7 +132,7 @@ public class DownloadCallback implements Callback {
                     downloadInfo.setStatus(STATUS_PROGRESS);
                     downloadInfo.setMessage("downloading");
                     handler.obtainMessage(STATUS_PROGRESS, downloadInfo).sendToTarget();
-                    Logger.d(downloadInfo.getName() + "-->" + downloadInfo.getProgress());
+                   // Log.d("----px----",downloadInfo.getName() + "-->" + downloadInfo.getProgress());
                     currentTime = System.currentTimeMillis();
                 }
             }

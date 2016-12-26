@@ -79,7 +79,6 @@ public class DownloadRequest extends RequestMaster {
         if(tag != null){
             builder.tag(tag);
         }
-        //Logger.d(url);
         builder.get().url(mUrl);
         return builder.build();
     }
